@@ -213,9 +213,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: b0b2577112204d34e9df19f6ee8b504c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b0b2577112204d34e9df19f6ee8b504c, type: 3}
       propertyPath: m_Name
       value: human biasa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: b0b2577112204d34e9df19f6ee8b504c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0b2577112204d34e9df19f6ee8b504c, type: 3}
@@ -1651,7 +1659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858227488}
   m_LocalRotation: {x: -0.08346723, y: 0.08027321, z: 0.688518, w: 0.71591365}
-  m_LocalPosition: {x: 0.059, y: -1.076, z: 0.287}
+  m_LocalPosition: {x: 0.059, y: -0.645, z: 0.234}
   m_LocalScale: {x: -0.03, y: 0.05, z: 0.09999997}
   m_ConstrainProportionsScale: 0
   m_Children:
