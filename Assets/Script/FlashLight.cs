@@ -7,7 +7,7 @@ public class FlashLight : MonoBehaviour
     [SerializeField] private bool isOn = false;
     [SerializeField] private bool failSafe = false;
     public GameObject lightSource;
-    //public AudioSource clickSound;
+    public AudioSource clickSound;
 
 
     //start mati lampu
@@ -28,7 +28,7 @@ public class FlashLight : MonoBehaviour
             {
                 failSafe = true;
                 lightSource.SetActive(true);
-                //clickSound.Play();
+                clickSound.Play();
                 isOn = true;
                 StartCoroutine(FailSafe());
             }
@@ -37,7 +37,7 @@ public class FlashLight : MonoBehaviour
             {
                 failSafe = true;
                 lightSource.SetActive(false);
-                //clickSound.Play();
+                clickSound.Play();
                 isOn = false;
                 StartCoroutine(FailSafe());
             }        

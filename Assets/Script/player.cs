@@ -11,10 +11,16 @@ public class player : MonoBehaviour
     public bool isGrounded;
     public Rigidbody rb;
 
+    public AudioSource footStepSound;
+    public float footStepInterval = 0.1f;
+
     void Start()
     {
        rb = GetComponent<Rigidbody>();
        isGrounded = false;
+
+       //inisialisasi audio
+       footStepSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +30,11 @@ public class player : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         moveDirection = new Vector3(horizontal, 0, vertical);
         transform.Translate(moveDirection * speed * Time.deltaTime); 
+
+        if(moveDirection.magnitude > 0 && isGrounded)
+        {
+            PlayFootStepSound();
+        }
 
         if(Input.GetKeyDown(KeyCode.Space)&& isGrounded){
             rb.velocity = new Vector3(0,5,0);
@@ -35,6 +46,15 @@ public class player : MonoBehaviour
         }
         
 
+    }
+
+    void PlayFootStepSound()
+    {
+        if(!footStepSound.isPlaying)
+        {
+            footStepSound.Play();
+            Invoke("PlayFootStepSound", footStepInterval);
+        }
     }
 
     void OnCollisionEnter(Collision other)
