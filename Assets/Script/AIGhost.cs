@@ -38,6 +38,8 @@ public class AIGhost : MonoBehaviour
 
     public string deathScene;
 
+    public AudioSource jumpscareSound;
+
     void Start(){
         walking = true;
         randNum = Random.Range(0, destinationAmount);
@@ -67,6 +69,7 @@ public class AIGhost : MonoBehaviour
                 player.gameObject.SetActive(false);
                 aiAnim.ResetTrigger("sprint");
                 aiAnim.SetTrigger("jumpscare");
+                jumpscareSound.Play();
                 StartCoroutine(deathRoutine());
                 chasing = false;
             }
@@ -114,6 +117,7 @@ public class AIGhost : MonoBehaviour
     }
     IEnumerator deathRoutine(){
         yield return new WaitForSeconds(jumpscareTime);
+        //jumpscareSound.Play();
         SceneManager.LoadScene(deathScene);
     }
 }
