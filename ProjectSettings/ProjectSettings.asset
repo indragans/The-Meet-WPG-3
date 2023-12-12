@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 23
+  serializedVersion: 24
   productGUID: bfe895eb781f20c44a31ba21a2ce80ca
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -57,6 +57,7 @@ PlayerSettings:
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
+  unsupportedMSAAFallback: 0
   m_MTRendering: 1
   mipStripping: 0
   numberOfMipsStripped: 0
@@ -130,6 +131,7 @@ PlayerSettings:
   switchNVNOtherPoolsGranularity: 16777216
   switchNVNMaxPublicTextureIDCount: 0
   switchNVNMaxPublicSamplerIDCount: 0
+  switchMaxWorkerMultiple: 8
   stadiaPresentMode: 0
   stadiaTargetFramerate: 0
   vulkanNumSwapchainBuffers: 3
@@ -185,10 +187,17 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
+<<<<<<< Updated upstream
   iOSTargetOSVersionString: 11
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 11
+=======
+  iOSTargetOSVersionString: 12.0
+  tvOSSdkVersion: 0
+  tvOSRequireExtendedGameController: 0
+  tvOSTargetOSVersionString: 12.0
+>>>>>>> Stashed changes
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -304,6 +313,7 @@ PlayerSettings:
     m_StaticBatching: 0
     m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
+<<<<<<< Updated upstream
 =======
   m_BuildTargetPlatformIcons:
     - m_BuildTarget: Android
@@ -415,6 +425,8 @@ PlayerSettings:
       m_StaticBatching: 0
       m_DynamicBatching: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   m_BuildTargetGraphicsJobs:
     - m_BuildTarget: MacStandaloneSupport
       m_GraphicsJobs: 0
@@ -469,12 +481,15 @@ PlayerSettings:
     - OpenVR
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
+<<<<<<< Updated upstream
 =======
     - m_BuildTarget: Standalone
       m_Enabled: 0
       m_Devices:
         - Oculus
         - OpenVR
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -519,7 +534,7 @@ PlayerSettings:
   switchSocketConcurrencyLimit: 14
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
-  switchUseGOLDLinker: 0
+  switchEnableFileSystemTrace: 0
   switchLTOSetting: 0
   switchApplicationID: 72140675890085890
   switchNSODependencies: 
@@ -628,7 +643,6 @@ PlayerSettings:
   switchReleaseVersion: 0
   switchDisplayVersion: 1.0.0
   switchStartupUserAccount: 0
-  switchTouchScreenUsage: 0
   switchSupportedLanguagesMask: 0
   switchLogoType: 0
   switchApplicationErrorCodeCategory: 
@@ -670,6 +684,7 @@ PlayerSettings:
   switchNativeFsCacheSize: 32
   switchIsHoldTypeHorizontal: 0
   switchSupportedNpadCount: 8
+  switchEnableTouchScreen: 1
   switchSocketConfigEnabled: 0
   switchTcpInitialSendBufferSize: 32
   switchTcpInitialReceiveBufferSize: 64
@@ -680,8 +695,8 @@ PlayerSettings:
   switchSocketBufferEfficiency: 4
   switchSocketInitializeEnabled: 1
   switchNetworkInterfaceManagerInitializeEnabled: 1
-  switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
+  switchUseLegacyFmodPriorities: 1
   switchUseMicroSleepForYield: 1
   switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
@@ -783,13 +798,28 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
+  webGLPowerPreference: 2
   scriptingDefineSymbols:
     Standalone: RAYCAST_EDITOR
+    Windows Store Apps: RAYCAST_EDITOR
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
-  managedStrippingLevel: {}
+  managedStrippingLevel:
+    EmbeddedLinux: 1
+    GameCoreScarlett: 1
+    GameCoreXboxOne: 1
+    Lumin: 1
+    Nintendo Switch: 1
+    PS4: 1
+    PS5: 1
+    Stadia: 1
+    WebGL: 1
+    Windows Store Apps: 1
+    XboxOne: 1
+    iPhone: 1
+    tvOS: 1
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
@@ -882,7 +912,12 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
+<<<<<<< Updated upstream
   cloudProjectId: fc3d42b9-6e34-41f2-a043-68f4cd88c46c
+=======
+  windowsGamepadBackendHint: 0
+  cloudProjectId: 
+>>>>>>> Stashed changes
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: The-Meet-WPG-3 2023-12-11_19-19-31
